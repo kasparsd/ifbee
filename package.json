@@ -1,0 +1,21 @@
+{
+  "name": "@kasparsd/ifbee",
+  "version": "0.1.0",
+  "description": "ZigBee event observer",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js"
+  },
+  "author": "Kaspars Dambis (https://kaspars.net)",
+  "license": "MIT",
+  "dependencies": {
+    "zigbee-herdsman": "^0.7.0",
+    "zigbee-shepherd-converters": "^10.2.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "nodemon": "^1.19.2"
+  }
+}
