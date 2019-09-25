@@ -1,3 +1,4 @@
+import path from 'path'
 import { Controller } from 'zigbee-herdsman'
 import zigbeeShepherdConverters from 'zigbee-shepherd-converters'
 
@@ -9,7 +10,7 @@ async function connectDevice(controller) {
 }
 
 const controller = new Controller({
-  databasePath: '../device-db.json',
+  databasePath: path.resolve(__dirname, '../device-db.json'),
   serialPort: { 
     path: ZIGBEE_DEVICE_PATH 
   }
